@@ -23,4 +23,4 @@ body:
         - [ ] The status of the deletion is shown to the user
         - [ ] The user can log in with a new account immediately
     validations:
-      required: true
+      required: false
