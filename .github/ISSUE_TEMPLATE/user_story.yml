@@ -1,9 +1,7 @@
-version: "2.1"
 name: User Story
 description: A first step of requirement engineering capturing WHAT a user of our system needs and for what reason. This is purely problem domain and should never contain technical details or refer to UI elements.
 title: "[US]: "
 labels: ["userstory"]
-assignees:
 body:
   - type: input
     id: title
