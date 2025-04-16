@@ -1,0 +1,36 @@
+version: "2.1"
+name: User Story
+description: A first step of requirement engineering capturing WHAT a user of our system needs and for what reason. This is purely problem domain and should never contain technical details or refer to UI elements.
+title: "[US]: "
+labels: ["userstory"]
+assignees:
+body:
+  - type: input
+    id: title
+    attributes:
+      label: What's the title of the user story?
+      description: The title should describe the whole feature that is proposed. User stories typically capture a whole vertical slice of new system functionality and don't differentiate between frontend or backend as it's PURELY problem domain.
+      placeholder: Delete User Account
+    validations:
+      required: true
+  - type: textarea
+    id: narrative
+    attributes:
+      label: Narrative
+      description: Describe WHO (user, customer, API consumer) wants WHAT (condition, capability) and WHY (reason, final effect).
+      placeholder: As a customer, I want to be able to delete my account so that my private data is safe when I quit using the app.
+      value: "As a customer, ... so that ."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Describe under which circumstances the user story is considered successfully implemented.
+      placeholder: |
+        - All user data is removed from the database
+        - The user is asked for second confirmation
+        - The status of the deletion is shown to the user
+        - The user can log in with a new account immediately
+    validations:
+      required: true
