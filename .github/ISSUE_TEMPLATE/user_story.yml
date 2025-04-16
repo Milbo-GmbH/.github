@@ -26,9 +26,9 @@ body:
       label: Acceptance Criteria
       description: Describe under which circumstances the user story is considered successfully implemented.
       placeholder: |
-        - All user data is removed from the database
-        - The user is asked for second confirmation
-        - The status of the deletion is shown to the user
-        - The user can log in with a new account immediately
+        - [ ] All user data is removed from the database
+        - [ ] The user is asked for second confirmation
+        - [ ] The status of the deletion is shown to the user
+        - [ ] The user can log in with a new account immediately
     validations:
       required: true
